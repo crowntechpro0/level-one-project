@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        .resources-dropdown:hover .resources-dropdown-menu {
+            display: block !important;
+        }
+
+        .resources-dropdown .resources-dropdown-menu {
+            display: none !important;
+        }
+
+        .hire-dropdown-menu {
+            display: none !important;
+        }
+
+        .hire-dropdown:hover .hire-dropdown-menu {
+            display: block !important;
+
+        }
+
+        .adobe:hover .adobe-dropdown {
+            display: block !important;
+        }
+
+        .jobs:hover,
+        .explore:hover {
+            /* padding: ; */
+            border-bottom: solid black 3px !important;
+        }
+
+        .ul:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .blue:hover,
+        .green:hover,
+        .pink:hover {
+            transform: translateY(-20px);
+            cursor: pointer;
+        }
+
+        .card {
+            transition: transform ease-in 250ms;
+        }
+
+        .footer p:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .nav-but:hover {
+            background-color: white;
+        }
+
+
+        .nav-but {
+            padding: 3px;
+            cursor: pointer;
+        }
+
+        .nv:hover {
+            background-color: blue;
+
+        }
+
+        .nv-parent:hover .nv-sibling {
+            display: block !important;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .hover-parent:hover .hover {
+            display: block !important;
+            cursor: pointer;
+        }
+
+        .hover-parent {
+            transition: hover ease-in 250s;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-top top-0 start-0 w-100 bg-white shadow-sm mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top top-0 start-0 w-100 bg-white">
+            <div class="container-fluid d-flex align-items-center bg-white">
+
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <div class="d-flex align-items-center gap-5">
+                    <div>
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/navbar-logo.svg" alt=""
+                            width="100" class="d-none d-xl-inline">
+                        <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/be.svg" alt="" width="30"
+                            class="d-inline d-xl-none">
+                    </div>
+
+                    <div class="collapse navbar-collapse me-0 flex-grow-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-0 mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold fs-5 explore" aria-current="page"
+                                    href="./explore.html">Explore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold fs-5 jobs border-bottom border-light border-3"
+                                    href="#">Find Jobs</a>
+                            </li>
+                            <li class="nav-item dropdown hire-dropdown">
+                                <a class="nav-link text-dark dropdown-toggle fw-bold fs-5 " aria-current="page"
+                                    href="./hire.html">Hire Freelancers</a>
+                                <div class="hire-dropdown-menu position-absolute  bg-white shadow-lg rounded-3 " style="z-index: 50 !important;">
+                                    <p><a class="dropdown-item" href="#">Hiring Dashboard</a></p>
+                                    <p><a class="dropdown-item" href="#">Freelancers</a></p>
+                                    <p><a class="dropdown-item" href="#">Hiring on Behance</a></p>
+                                    <p><a class="dropdown-item" href="#">Create New Job</a></p>
+                                    <p><hr class="dropdown-divider"></p>
+                                    <p><a class="dropdown-item" href="#">Logo Designers</a></p>
+                                    <p><a class="dropdown-item" href="#">Brand Designers</a></p>
+                                    <p><a class="dropdown-item" href="#">Website Designers</a></p>
+                                    <p><a class="dropdown-item" href="#">Illustrators</a></p>
+                                    <p><a class="dropdown-item" href="#">Social Media Designers</a></p>
+                                </div>
+                            </li>
+
+                            <li class="nav-item resources-dropdown">
+                                <a class="nav-link dropdown-toggle text-dark fw-bold fs-5 border-bottom border-light border-3"
+                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Career Resources
+                                </a>
+                                <div class="resources-dropdown-menu position-absolute bg-white shadow-lg rounded-3 z-3"
+                                    style="z-index: 50 !important;">
+                                    <p><a class="dropdown-item" href="#">Overview</a></p>
+                                    <p><a class="dropdown-item" href="#">Career Guides</a></p>
+                                    <!-- <li><hr class="dropdown-divider"></li> -->
+                                    <p><a class="dropdown-item" href="#">Commissioned Projects</a></p>
+                                    <p><a class="dropdown-item" href="#">Creative Apprenticeship</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- <div class="w-50 position-relative d-none d-xl-block">
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/search-icon.svg" alt="" class="position-absolute translate-middle-y top-50" width="20" style="margin-left: 20px;">
+                    <input class="rounded-pill form-control w-100 px-5 text-black " type="search" placeholder="Search..." aria-label="Search">
+                </div> -->
+                <form class="d-flex gap-1 align-items-center">
+                    <!-- <div>
+                        <button class="btn btn-primary py-2 rounded-pill d-none d-sm-inline d-lg-none"> Use App</button>
+                        <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/search-icon.svg" alt=""  width="20" style="margin-left: 20px;" class="d-xl-none">
+                    </div> -->
+                    <div class="d-flex align-items-center gap-3 d-none d-xl-flex">
+                        <button class="btn rounded-pill text-white fw-bold" type="submit"
+                            style="background-image: linear-gradient(to right,rgb(0, 183, 255),blue) !important;"><a
+                                href="./index.html" class="text-white fw-bold" style="text-decoration: none;">Start Free
+                                Trial</a></button>
+                        <button class="btn btn-outline-primary rounded-pill px-3"> Sign In</button>
+                        <div class="adobe">
+                            <!-- <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/adobe-icon.svg" alt="" width="70" style="cursor: pointer;"> -->
+                            <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/adobe-icon-no-name.svg"
+                                alt="" width="30" style="cursor: pointer;">
+                            <div class="position-absolute bg-dark text-white adobe-dropdown d-none"
+                                style="width: 335px; font-size: 10px; top: 90%; right: 00px;">
+                                <div class="d-flex">
+                                    <img src="" alt="">
+                                    <div>
+                                        <p class="fw-bold"> Go to adobe.com</p>
+                                        <p>Access your apps, services, files, and more</p>
+                                    </div>
+                                    <img src="" alt="">
+                                </div>
+
+                                <div class="d-flex  m-0 p-0">
+                                    <img src="" alt="">
+                                    <div>
+                                        <p class="fw-bold">opens in a new tab</p>
+                                        <p>Get Adobe Express free</p>
+                                    </div>
+                                    <img src="" alt="">
+                                </div>
+
+                                <div class="d-flex  m-0 p-0">
+                                    <img src="" alt="">
+                                    <div>
+                                        <p class="fw-bold">Quickly make content from thousands of free templates</p>
+                                        <p>opens in a new tab</p>
+                                    </div>
+                                    <img src="" alt="">
+                                </div>
+
+                                <div class="d-flex  m-0 p-0">
+                                    <img src="" alt="">
+                                    <div>
+                                        <p class="fw-bold">30-day free trial of Adobe Stock</p>
+                                        <p>835M+ assets, plus edit with ease using generative AI</p>
+                                    </div>
+                                    <img src="" alt="">
+                                </div>
+
+                                <div class="d-flex m-0 p-0">
+                                    <img src="" alt="">
+                                    <div>
+                                        <p class="fw-bold">7 day free trial of Behance Pro</p>
+                                        <p>Supercharge your creative career with Behance Pro</p>
+                                    </div>
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <section>
+            <div class="d-flex gap-xl-2 gap-1 mx-2 mt-3">
+                <button class="btn btn-sm-outline-secondary rounded-sm-pill px-sm-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"
+                            d="M21.25 12H8.895m-4.361 0H2.75m18.5 6.607h-5.748m-4.361 0H2.75m18.5-13.214h-3.105m-4.361 0H2.75m13.214 2.18a2.18 2.18 0 1 0 0-4.36a2.18 2.18 0 0 0 0 4.36Zm-9.25 6.607a2.18 2.18 0 1 0 0-4.36a2.18 2.18 0 0 0 0 4.36Zm6.607 6.608a2.18 2.18 0 1 0 0-4.361a2.18 2.18 0 0 0 0 4.36Z" />
+                    </svg>
+                    <span class="d-none d-sm-inline">Filter</span>
+                </button>
+
+                <div class="col-6 col-lg-9 position-relative flex-grow-1 border">
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/search-icon.svg" alt=""
+                        class="position-absolute translate-middle-y top-50 ms-3" width="20">
+
+                    <input class="rounded-pill form-control w-100 ps-5 text-black py-2 bg-secondary-subtle"
+                        style="background-color: rgba(128, 128, 128, 0.09);" type="search"
+                        placeholder="Search Behance..." aria-label="Search">
+
+                    <div class="position-absolute top-50 translate-middle-y end-0 d-flex pe-4 gap-3 align-items-center">
+                        <p class="mb-0 rounded-pill bg-white px-2 py-1 d-none d-sm-block" style="cursor: pointer;">
+                            Projects</p>
+                        <p class="mb-0  nav-but px-2 rounded-pill d-none d-lg-inline">People</p>
+                        <p class="mb-0  nav-but px-2 rounded-pill d-none d-xl-inline">Assets</p>
+                        <p class="mb-0  nav-but px-2 d-none d-xl-inline">Images</p>
+                        <div class="dropdown d-none d-md-inline d-xl-none mb-0">
+                            <p class="dropdown-toggle mb-0" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </p>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary rounded-pill dropdown-toggle d-none d-sm-inline"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-filter" viewBox="0 0 16 16">
+                            <path
+                                d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                        <span class="d-none d-xl-inline">Recommended</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">ActionRecommended</a></li>
+                        <li><a class="dropdown-item" href="#">Curated</a></li>
+                        <li><a class="dropdown-item" href="#">Most Appreciated</a></li>
+                        <li><a class="dropdown-item" href="#">Most Viewed</a></li>
+                        <li><a class="dropdown-item" href="#">Most Discussed</a></li>
+                        <li><a class="dropdown-item" href="#">Most Recent</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">FILTERS</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Creative Fields</p>
+                            <p>Availabilty</p>
+                            <p>Location</p>
+                            <p>Tools</p>
+                            <p>Color</p>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                            <button type="button" class="btn btn-primary w-100 rounded-pill"
+                                data-bs-dismiss="modal">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-lg-5 mt-3 mb-lg-2 pb-3 ps-2">
+            <div class="d-flex gap-2" style="overflow-x: auto; scrollbar-width: none; font-size: 14px;">
+                <div class="nv-parent position-relative text-center">
+                    <span
+                        class="py-2 rounded-3 mb-0 text-white text-center fw-bold d-flex align-items-center gap-2 justify-content-center"
+                        style=" z-index:30; background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv1.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                        For You</span>
+                    <div class=" btn d-inline position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold d-flex align-items-center gap-2 justify-content-center"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                        </svg>
+                        Following
+                    </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white fw-bold d-flex align-items-center gap-2 justify-content-center"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-patch-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                            <path
+                                d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911z" />
+                        </svg>
+                        Best of Behance
+                    </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Graphics design </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Photography </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Illustration</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        3D Art</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        UI/UX</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Motion </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Architecture </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Product Design </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Fashion </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Advertising </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Fine Arts </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Crafts </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Game Design </p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Sound</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Creative Challenges</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Photoshop</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Lightroom</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Illustrator</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        InDeesign</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        XD</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Premiere Pro</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        After Effects</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        illustrator Draw</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Photoshop Sketch</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Photoshop Mix</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Stock</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Dimension</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Capture</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 185px !important;">
+                        Substance 3D Designer</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 180px !important;">
+                        Substance 3D Sampler</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 180px !important;">
+                        Substance 3D Stager</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Fresco</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+
+                <div class=" nv-parent position-relative">
+                    <p class="py-2 rounded-3 mb-0 px-3 text-white text-center fw-bold"
+                        style="background-image: url('./Showcase, Discover, and Hire Creatives __ Behance/nv2.webp'); background-position: center; background-size: cover; background-color: rgba(0, 0, 0, 0.65); background-blend-mode: overlay; min-height: 100; width: 175px !important;">
+                        Aero</p>
+                    <div class=" btn position-absolute start-0 nv-sibling d-none"
+                        style="min-height: 45px; width: 175px; top:-6px; background-color: #0148cd7e;"></div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <section class="mb-5">
+        <div class="container-fluid">
+            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4"
+                style="font-size: 12px;">
+                <div class="col ">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_68_a34401227270615.Y3JvcCwyNTQ4LDE5OTMsNjksMzcy.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <p>Real Estate Website - About Us</p>
+                            <p>Uix Shuvo</p>
+                        </div>
+                        <div class="d-flex">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_214_7dccf0215048073.Y3JvcCwxMjcwLDk5Myw2MzIsMzY3.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Metropolis ❘ Isometric illustration</p>
+                            <p>MelcGraphic ©</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_233_21470a235407575.Y3JvcCwxMTkyLDkzMywxMDMsMA.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Basecamp</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_248_d74c91225986921.Y3JvcCwxMjA1LDk0Myw1MjIsNzQ.png"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Neoshi</p>
+                            <p>Multiple Owners</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_262_1cc2e4225344403.Y3JvcCwxNDAwLDEwOTUsMCwzNA.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Lemana Tech</p>
+                            <p>Multiple Owners</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-1"> -->
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_281_c98a11214866909.Y3JvcCwxMTkyLDkzMyw2Miww.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Meet The Team section and image design </p>
+                            <p>Kateryna Lukina <span>PRO</span></p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_271_f22b19230676227.Y3JvcCwxMjg3LDEwMDYsMzE4LDY.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>About Us Page</p>
+                            <p>Tasbirul Hasan Ratul</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_300_a34401227270615.Y3JvcCwyNTQ4LDE5OTMsNjksMzcy.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>About Us Page</p>
+                            <p>Tasbirul Hasan Ratul</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_329_d3fab7198413165.Y3JvcCwxODQxLDE0NDAsNDEwLDE2MDk.png"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>MEET THE ICONS</p>
+                            <p>ARTSBY EMDE</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_339_210d1b235323743.Y3JvcCw0MjYzLDMzMzUsMjg0LDA.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>About Us Page</p>
+                            <p>Multiple Owners </p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+
+                <!-- <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-1"> -->
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_52_e70de7234478379.Y3JvcCwxMTk1LDkzNSw4LDA.png"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Real Estate Agency Website Design (Eco-Friendly Homes)</p>
+                            <p>Oluwatosin Obalana</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/img15.jpg" alt=""
+                            class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>喜番2024 Packaging and Visual Design</p>
+                            <p>simin xu</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_377_da0b17204604907.Y3JvcCwxMzAzLDEwMTksODcsNjQ.png"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Atlas Productora | Branding</p>
+                            <p>IAOEU Estudio™</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_349_d0441a212406227.Y3JvcCw4MjMsNjQzLDI4NSw5Nw.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>NOA Nikkei</p>
+                            <p>Menta Estudio</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_252_656981205263881.Y3JvcCw4MzMsNjUxLDI4NCw2OA.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Circle Brand Identity | Brand Guidelines</p>
+                            <p>Akinbinu Akintayoopens in a new tab</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+
+                <!-- <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-1"> -->
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_34_d9ce31235504041.Y3JvcCw5NDAsNzM1LDE0OCwzNzA.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>THE FASHION ICONS SERIES VOL.01</div>
+                        <div>SEUNGWON HONGopens in a new tab</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_359_ae3f25228792387.Y3JvcCw0MDQsMzE2LDI2Myww.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Chubby Animation / BKK Design Week 2025</p>
+                            <p>Multiple Owners</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_40_9b00b4216771617.Y3JvcCwxMjg3LDEwMDYsNjMwLDM1.png"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Illustration Library for TON</p>
+                            <p>Multiple Owners</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="max-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_319_0dca7f146256427.Y3JvcCwxMDY3LDgzNSwxNjYsMA.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Beach Playground - Hatch Out series Part 3</p>
+                            <p>Niko Photographismeopens in a new tab</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div style="min-width: 100%;" class="position-relative hover-parent">
+                        <div class="d-none hover"
+                            style="background-color: rgba(0, 0, 0, 0.444); width: 100% ; height: 100%; position: absolute;">
+                            <p class="fs-6 text-white rounded-pill px-3 py-1 m-2 d-flex align-items-center gap-2"
+                                style="background-color: #191919c2; width: fit-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                                    <path
+                                        d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                                </svg>
+                                Save
+                            </p>
+                        </div>
+                        <img src="./Showcase, Discover, and Hire Creatives __ Behance/imgi_31_90ec33234351827.Y3JvcCwyNzE3LDIxMjUsMCw0NDM.jpg"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Fornello</p>
+                            <p>Multiple Owners</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="d-flex justify-content-center">
+        <div>
+            <div class="d-flex justify-content-center">
+
+                <p class="w-75 text-center fw-bold fs-5">Sign in to search the world's largest creative network</p>
+            </div>
+            <div class="mx-5 d-flex justify-content-center">
+                <div class="col-lg-9 col-12">
+                    <p><button class="btn rounded-pill w-100 border-2 border-dark mb-2">Continue with Google</button>
+                    </p>
+                    <p><button class="btn  rounded-pill w-100 border-2 border-dark mb-2">Continue with Facebook</button>
+                    </p>
+                    <p><button class="btn  rounded-pill w-100 border-2 border-dark mb-2">Continue with Apple</button>
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <p class="text-center">View more</p>
+
+                <div class="d-flex align-items-center">
+                    <hr class="flex-grow-1">
+                    <span class="mx-2">OR</span>
+                    <hr class="flex-grow-1">
+                </div>
+
+                <p class="fs-5 fw-bold my-4">Continue with email</p>
+                <form action="">
+                    <p for="email mb-0" style="font-size: 14px; margin-bottom: 10px;"> Email Adress</p>
+                    <input type="email" class="w-75 border-3 rounded-3 p-1"><br>
+                    <div class="text-end">
+                        <button class="btn btn-dark rounded-pill my-3">Continue</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <div class="mt-5"
+        style="background-image: linear-gradient(to right , blue, yellow,orange, red, pink, orange , red, aqua,lightblue) ; height: 5px;">
+    </div>
+    <div class="py-3 mb-0 bg-white shadow-lg d-flex align-items-center justify-content-center text-center">
+        <p class="mb-0"> <span class="fw-bold">Upgrade to Behance Pro today:</span> Get advanced analytics, a custom
+            portfolio website, and more features to grow your creative career. <span class="fw-bold text-primary">Start
+                your 7 day free trial</span></p>
+    </div>
+    <footer class="py-5" style="background-color: #191919;">
+        <div class="text-white d-flex flex-column flex-lg-row gap-4  justify-content-around my-5 footer px-5">
+            <div class="col-lg-3 col-12 text-center">
+                <h2 class="fs-1 fw-bold">BEHANCE</h2>
+            </div>
+
+            <div class=" d-flex justify-content-center">
+                <div class="d-flex flex-column flex-lg-row justify-content-between gap-5 text-center text-lg-start">
+                    <div>
+                        <h3 class=" fw-bold fs-5">Built For Creatives</h3>
+                        <div class="d-flex flex-column">
+                            <p>Try Behance Pro</p>
+                            <p>Find Inspiration</p>
+                            <p>Get Hired</p>
+                            <p>Sell Creative Assets</p>
+                            <p>Sell Freelance Services</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold fs-5">Find Talent</h3>
+                        <div>
+                            <p>Post a Job</p>
+                            <p>Graphic Designers</p>
+                            <p>Photographers</p>
+                            <p>Video Editors</p>
+                            <p>Web Designers</p>
+                            <p>Illustrators</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class=" fw-bold fs-5">Behance</h3>
+                        <div>
+                            <p>About Behance</p>
+                            <p>Adobe Portfolio</p>
+                            <p>Download the App</p>
+                            <p>Blog</p>
+                            <p>Careers</p>
+                            <p>Help Center</p>
+                            <p>Contact Us</p>
+                            <p>Login</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class=" fw-bold fs-5">Social</h3>
+                        <div>
+                            <p>Instagram</p>
+                            <p>Twitter</p>
+                            <p>Pinterest</p>
+                            <p>Facebook</p>
+                            <p>LinkedIn</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white mx-5" style="height: 1px;"></div>
+
+        <div class="d-flex flex-column flex-lg-row text-white justify-content-between align-items-center mx-5 "
+            style="font-size: 13px;">
+            <div>
+                <img src="" alt="">
+                <p>&copy; 2025 Adobe Inc. All rights reserved.</p>
+            </div>
+            <div class="d-flex gap-3 justify-content-center text-center" style="flex-wrap: wrap;">
+                <span>English</span>
+                <span>TOU</span>
+                <span>Privacy</span>
+                <span>Community</span>
+                <span>Cookie preferences</span>
+                <span class="h">Do not sell or share my personal information</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

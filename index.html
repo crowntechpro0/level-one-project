@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            overflow: hiden;
+        }
+
+        .resources-dropdown:hover .resources-dropdown-menu {
+            display: block !important;
+        }
+
+        .resources-dropdown .resources-dropdown-menu {
+            display: none !important;
+        }
+
+        .hire-dropdown-menu {
+            display: none !important;
+        }
+
+        .hire-dropdown:hover .hire-dropdown-menu {
+            display: block !important;
+
+        }
+
+        .adobe:hover .adobe-dropdown {
+            display: block !important;
+        }
+
+        .jobs:hover,
+        .explore:hover {
+            /* padding: ; */
+            border-bottom: solid black 3px !important;
+        }
+
+        .ul:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .blue:hover,
+        .green:hover,
+        .pink:hover {
+            transform: translateY(-20px);
+            cursor: pointer;
+        }
+
+        .card {
+            transition: transform ease-in 250ms;
+        }
+
+        .footer p:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent d-flex align-items-center">
+        <div class="container-fluid d-flex align-items-center">
+
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/navbar-logo.svg" alt="" width="70"
+                    class="d-none d-xl-inline">
+                <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/be.svg" alt="" width="30"
+                    class="d-inline d-xl-none">
+            </div>
+
+
+
+            <div class="collapse navbar-collapse me-0 flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-0 mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold explore" aria-current="page"
+                            href="explore.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold jobs border-bottom border-light border-3" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item resources-dropdown">
+                        <a class="nav-link dropdown-toggle text-dark fw-bold border-bottom border-light border-3"
+                            href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <div class="resources-dropdown-menu position-absolute bg-white shadow-lg rounded-3">
+                            <p><a class="dropdown-item" href="#">Overview</a></p>
+                            <p><a class="dropdown-item" href="#">Career Guides</a></p>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <p><a class="dropdown-item" href="#">Commissioned Projects</a></p>
+                            <p><a class="dropdown-item" href="#">Creative Apprenticeship</a></p>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown hire-dropdown">
+                        <a class="nav-link text-dark dropdown-toggle fw-bold " aria-current="page"
+                            href="./hire.html">Hire Freelancers</a>
+                        <div class="hire-dropdown-menu position-absolute bg-white shadow-lg rounded-3">
+                            <p><a class="dropdown-item" href="#">Hiring Dashboard</a></p>
+                            <p><a class="dropdown-item" href="#">Freelancers</a></p>
+                            <p><a class="dropdown-item" href="#">Hiring on Behance</a></p>
+                            <p><a class="dropdown-item" href="#">Create New Job</a></p>
+                            <p>
+                                <hr class="dropdown-divider">
+                            </p>
+                            <p><a class="dropdown-item" href="#">Logo Designers</a></p>
+                            <p><a class="dropdown-item" href="#">Brand Designers</a></p>
+                            <p><a class="dropdown-item" href="#">Website Designers</a></p>
+                            <p><a class="dropdown-item" href="#">Illustrators</a></p>
+                            <p><a class="dropdown-item" href="#">Social Media Designers</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-50 position-relative d-none d-xl-block">
+                <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/search-icon.svg" alt=""
+                    class="position-absolute translate-middle-y top-50" width="20" style="margin-left: 20px;">
+                <input class="rounded-pill form-control w-100 px-5 text-black " type="search" placeholder="Search..."
+                    aria-label="Search">
+            </div>
+            <form class="d-flex gap-1 align-items-center">
+                <div>
+                    <button class="btn btn-primary py-2 rounded-pill d-none d-sm-inline d-lg-none"> Use App</button>
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/search-icon.svg" alt=""
+                        width="20" style="margin-left: 20px;" class="d-xl-none">
+                </div>
+                <div class="d-flex align-items-center gap-3 d-none d-lg-flex">
+                    <button class="btn rounded-pill text-white fw-bold" type="submit"
+                        style="background-image: linear-gradient(to right,rgb(0, 183, 255),blue) !important;"> <a
+                            href="index.html" class="text-white fw-bold" style="text-decoration: none;">Start Free
+                            Trial</a></button>
+                    <button class="btn btn-outline-primary rounded-pill px-3"> Sign In</button>
+                    <div class="adobe">
+                        <!-- <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/adobe-icon.svg" alt="" width="70" style="cursor: pointer;"> -->
+                        <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/adobe-icon-no-name.svg"
+                            alt="" width="30" style="cursor: pointer;">
+                        <div class="position-absolute bg-dark text-white adobe-dropdown d-none"
+                            style="width: 335px; font-size: 10px; top: 90%; right: 00px;">
+                            <div class="d-flex">
+                                <img src="" alt="">
+                                <div>
+                                    <p class="fw-bold"> Go to adobe.com</p>
+                                    <p>Access your apps, services, files, and more</p>
+                                </div>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="d-flex  m-0 p-0">
+                                <img src="" alt="">
+                                <div>
+                                    <p class="fw-bold">opens in a new tab</p>
+                                    <p>Get Adobe Express free</p>
+                                </div>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="d-flex  m-0 p-0">
+                                <img src="" alt="">
+                                <div>
+                                    <p class="fw-bold">Quickly make content from thousands of free templates</p>
+                                    <p>opens in a new tab</p>
+                                </div>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="d-flex  m-0 p-0">
+                                <img src="" alt="">
+                                <div>
+                                    <p class="fw-bold">30-day free trial of Adobe Stock</p>
+                                    <p>835M+ assets, plus edit with ease using generative AI</p>
+                                </div>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="d-flex m-0 p-0">
+                                <img src="" alt="">
+                                <div>
+                                    <p class="fw-bold">7 day free trial of Behance Pro</p>
+                                    <p>Supercharge your creative career with Behance Pro</p>
+                                </div>
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!-- FIRST SECTION -->
+
+    <section>
+        <div style="background-image: url('./Accelerate Your Creative Career _ Behance Pro __ Behance/imgi_104_pro_marketing_banner_2x.webp'); width: 100vw; height:fit-content; background-position: center; background-size: cover; background-repeat: no-repeat;"
+            class="text-white d-flex justify-content-center text-center align-items-center py-5 container-fluid">
+            <div class="py-5">
+                <div class="text-center d-flex justify-content-center fw-semibold row pt-5">
+                    <p style="font-size: 3.5rem;" class="fw-bold col-12 col-lg-6 m-0 p-0 lh-1">Accelerate Your Creative
+                        Career with Behance Pro</p>
+                </div>
+
+                <div class="text-center d-flex justify-content-center fw-semibold fs-4 my-3">
+                    <p class="col-11 col-lg-6">Take your career further with tools designed to showcase your creativity,
+                        reach more people, and earn more—all in one place.</p>
+                </div>
+                <div class="mt-4 text-center container d-flex justify-content-center pb-5 flex-column flex-md-row">
+                    <button class="btn btn-light px-4 rounded-pill fw-bold me-lg-4 d-block">Start Free Trial</button>
+                    <button class="btn btn-outline-dark px-4 text-white rounded-pill fw-bold mt-4 mt-lg-0">Compare
+                        Plans</button>
+                </div>
+            </div>
+        </div>
+        <p class="text-end container-fluid mt-2" style="font-size: 12px;">Art by <span class="ul">Sabyasachi
+                Koley</span></p>
+    </section>
+
+
+    <!-- SECOND SECTION -->
+
+    <section class="py-5">
+        <h3 class="text-center py-5 fw-bold fs-1" style="font-size: 3.5rem;">Why upgrade to Pro?</h3>
+
+        <div class="d-flex flex-column flex-lg-row container gap-4 py-5">
+
+            <div class="text-lg-center card p-3  shadow-sm blue d-flex gap-4 flex-row flex-lg-column align-content-center"
+                style="border-radius: 20px; border: solid 1px #0055ff5d !important;">
+                <div class="d-flex justify-content-center align-content-center h-25">
+                    <div class="bg-white shadow-sm my-3"
+                        style="width: fit-content; height: fit-content; border-radius: 20px; border: solid 1px #0055ff5d !important;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
+                            <path fill="#0057ff"
+                                d="M14 9a.5.5 0 0 1 .5-.5H18a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-1 0v-2.293l-5.146 5.147a.5.5 0 0 1-.708 0L9 12.707l-2.646 2.647a.5.5 0 0 1-.708-.708l3-3a.5.5 0 0 1 .708 0L12 14.293L16.793 9.5H14.5A.5.5 0 0 1 14 9" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="fs-4 fw-bold">Expand Your Reach</p>
+                    <p class="fw-semibold">Reach more clients and collaborators and get your work seen by the right
+                        people at the right time.</p>
+                    <p class="fw-semibold">Learn More</p>
+                </div>
+            </div>
+
+            <div class="text-lg-center card p-3 shadow-sm green d-flex gap-4 flex-row flex-lg-column align-content-center"
+                style="border-radius: 20px; border: solid 1px #01890153 !important;">
+                <div class="d-flex justify-content-center align-content-center" style="height: fit-content;">
+                    <div class="bg-white shadow-sm my-3 p-2 "
+                        style="width: fit-content; border-radius: 20px; border: solid 1px #01890153 !important;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 14 14">
+                            <path fill="#028901" fill-rule="evenodd"
+                                d="M5.094-.001h-.006c-.226.002-.443.07-.63.19a1.25 1.25 0 0 0-.433.48a1.32 1.32 0 0 0 .055 1.296l.667.941c-1.124.699-2.019 1.514-2.655 2.497C1.342 6.561.98 7.908.98 9.478c0 1.547.663 2.718 1.795 3.475C3.873 13.687 5.36 14 7 14s3.128-.314 4.226-1.051c1.133-.76 1.794-1.937 1.794-3.492c0-1.57-.362-2.916-1.112-4.074c-.636-.98-1.53-1.794-2.652-2.488l.663-.93A1.32 1.32 0 0 0 9.975.67a1.25 1.25 0 0 0-.433-.48a1.2 1.2 0 0 0-.63-.19zM6.16 2.741L5.132 1.287a.1.1 0 0 1 .001-.038h3.734a.1.1 0 0 1 0 .038L7.84 2.729a.625.625 0 0 0 .21.912c1.286.7 2.207 1.494 2.809 2.423c.599.924.911 2.026.911 3.394c0 1.149-.462 1.931-1.24 2.454c-.813.545-2.022.839-3.53.839s-2.717-.293-3.53-.837c-.779-.521-1.24-1.3-1.24-2.436c0-1.368.312-2.47.911-3.396c.603-.93 1.524-1.727 2.81-2.432a.625.625 0 0 0 .21-.91m1.464 2.134v.479a1.71 1.71 0 0 1 1.347 1.118a.625.625 0 0 1-1.178.417a.46.46 0 0 0-.433-.306h-.838a.342.342 0 0 0-.073.677l1.276.279a1.709 1.709 0 0 1-.101 3.358v.478a.625.625 0 1 1-1.25 0v-.479a1.71 1.71 0 0 1-1.347-1.118a.625.625 0 1 1 1.178-.417a.46.46 0 0 0 .433.306h.722a.459.459 0 0 0 .098-.907l-1.277-.28a1.592 1.592 0 0 1 .193-3.14v-.465a.625.625 0 1 1 1.25 0"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="fs-4 fw-bold">Grow Your Earnings</p>
+                    <p>Get exclusive access to premium freelance jobs from top clients—with no platform fees.</p>
+                    <p>Learn More</p>
+                </div>
+            </div>
+
+            <div class="text-lg-center card p-3  shadow-sm pink d-flex gap-4 flex-row flex-lg-column align-content-center"
+                style="border-radius: 20px; border: solid 1px #b125c044 !important;">
+                <div class="d-flex justify-content-center align-content-center" style="height: fit-content;">
+                    <div class="bg-white shadow-sm my-3 p-2 "
+                        style="width: fit-content; border-radius: 20px; border: solid 1px #b125c044 !important;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="" viewBox="0 0 12 12">
+                            <path fill="#b125c0"
+                                d="M1 5.51a1 1 0 0 1 .69-.953l1.786-.584a2.43 2.43 0 0 0 1.512-1.506L5.546.7A1 1 0 0 1 7.452.695l.576 1.796a2.4 2.4 0 0 0 1.497 1.502l1.776.56a1 1 0 0 1 .004 1.907l-1.778.569a2.39 2.39 0 0 0-1.5 1.502l-.567 1.774a1 1 0 0 1-1.9.014l-.6-1.776V8.54a2.44 2.44 0 0 0-1.507-1.514l-1.76-.566A1 1 0 0 1 1 5.51m2.77.568A3.43 3.43 0 0 1 5.907 8.22l.6 1.78l.57-1.78a3.4 3.4 0 0 1 2.138-2.142L11 5.508l-1.785-.564a3.39 3.39 0 0 1-2.137-2.141L6.5 1l-.563 1.78a3.43 3.43 0 0 1-2.144 2.142L2 5.508zM2 9v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1H3v.5a.5.5 0 0 1-1 0V10h-.5a.5.5 0 0 1 0-1z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="fs-4 fw-bold">Stand Out from the Crowd</p>
+                    <p>Showcase your unique brand with customizations that match who you are as a creative.</p>
+                    <p>Learn More</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center container d-flex justify-content-center pb-5 flex-column flex-md-row">
+            <button class="btn btn-dark px-4 rounded-pill fw-bold me-lg-4 d-block">Start Free Trial</button>
+            <button class="btn btn-light px-4 rounded-pill fw-bold mt-4 mt-lg-0">Compare Plans</button>
+        </div>
+    </section>
+
+
+    <!-- THIRD SECTION -->
+    <section class="py-5" style="background-color: #f5f5ff; height: fit-content;">
+        <div class="d-flex justify-content-center align-content-center">
+            <div class="bg-white shadow-sm my-3"
+                style="width: fit-content; height: fit-content; border-radius: 20px; border: solid 1px #0055ff5d !important;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
+                    <path fill="#0057ff"
+                        d="M14 9a.5.5 0 0 1 .5-.5H18a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-1 0v-2.293l-5.146 5.147a.5.5 0 0 1-.708 0L9 12.707l-2.646 2.647a.5.5 0 0 1-.708-.708l3-3a.5.5 0 0 1 .708 0L12 14.293L16.793 9.5H14.5A.5.5 0 0 1 14 9" />
+                </svg>
+            </div>
+        </div>
+        <p style="color: #0055ff;" class="fw-bold fs-5 text-center">Expand Your Reach</p>
+        <p class="fw-bold fs-1 text-center">Get your work seen by more clients and <br>collaborators</p>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-dark px-4 rounded-pill fw-bold me-lg-4 d-block">Start Free Trial</button>
+        </div>
+
+        <div class="container-lg container-fluid py-5 mx-auto">
+            <div class="d-flex justify-content-center my-5 shadow-md flex-column mx-auto flex-lg-row">
+                <div class="w-lg-50 w-100">
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/imgi_1_pro_boost_projects.webp"
+                        alt="" class="w-100" style="border-radius:  20px 0 0 20px ;">
+                </div>
+                <div class="w-100 bg-white d-flex flex-column justify-content-center px-4 text-center text-lg-start"
+                    style="border-radius: 0 20px 20px 0;">
+                    <p class="fw-bold fs-5">Boost your projects</p>
+                    <p class="w-lg-75 w-100">Highlight your best work and make sure it reaches the right eyes at the
+                        right time.</p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center my-5 shadow-md flex-column mx-auto flex-lg-row">
+                <div class="w-lg-50 w-100">
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/imgi_2_pro_traffic_sources.webp"
+                        alt="" class="w-100" style="border-radius:  20px 0 0 20px ;">
+                </div>
+                <div class="w-10 bg-white  d-flex flex-column justify-content-center px-4 text-center text-lg-start"
+                    style="border-radius: 0 20px 20px 0;">
+                    <p class="fw-bold fs-4">See who's viewed your profile and projects</p>
+                    <p class="w-lg-75 w-100 fs-5">Get detailed insights on who's engaging with your work and how they
+                        found you, so you can follow up with potential clients and collaborators.</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-colmn justify-content-center my-5 shadow-md flex-column mx-auto flex-lg-row">
+                <div class="w-lg-50 w-100">
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/imgi_3_pro_scheduled_publish.webp"
+                        alt="" class="w-100" style="border-radius:  20px 0 0 20px;">
+                </div>
+                <div class="w-100 bg-white d-flex flex-column justify-content-center px-4 text-center text-lg-start"
+                    style="border-radius: 0 20px 20px 0;">
+                    <p class="fw-bold fs-4">Get noticed</p>
+                    <p class="w-lg-75 w-100 fs-5">Schedule your projects to publish at a set day/time to get maximum
+                        engagement with your audience.</p>
+                </div>
+            </div>
+
+            <div class="container d-flex align-items-center justify-content-between px-4 py-4 text-white flex-column mx-auto flex-lg-row pb-5 my-5"
+                style="background-image: linear-gradient(to right,rgb(0, 183, 255),blue) !important; height: fit-content; width: 100%; border-radius: 30px;">
+                <!-- <div class="d-flex align-items-center gap-2"> -->
+                <p class="fw-bold" style="font-size: 4rem;">45%</p>
+                <div class="fw-bold border-2 bg-light d-none d-lg-block"
+                    style="opacity: 0.5; width: 3px; height: 100px;"></div>
+                <p class="w-50 fs-4">Pro members see their views and engagement increase by an average of<br><span
+                        class="fw-bold"> 45% in their first month</span></p>
+                <!-- </div> -->
+                <button class="btn btn-light w-25 rounded-pill" style="height: fit-content;">Start Free Trial</button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- FOURTH SECTION -->
+    <section class="py-5" style="background-color: #f4faf4;">
+        <div class="d-flex justify-content-center pt-5 align-content-center">
+            <div class="d-flex justify-content-center align-content-center" style="height: fit-content;">
+                <div class="bg-white shadow-sm my-3 p-2 "
+                    style="width: fit-content; border-radius: 20px; border: solid 1px #01890153 !important;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 14 14">
+                        <path fill="#028901" fill-rule="evenodd"
+                            d="M5.094-.001h-.006c-.226.002-.443.07-.63.19a1.25 1.25 0 0 0-.433.48a1.32 1.32 0 0 0 .055 1.296l.667.941c-1.124.699-2.019 1.514-2.655 2.497C1.342 6.561.98 7.908.98 9.478c0 1.547.663 2.718 1.795 3.475C3.873 13.687 5.36 14 7 14s3.128-.314 4.226-1.051c1.133-.76 1.794-1.937 1.794-3.492c0-1.57-.362-2.916-1.112-4.074c-.636-.98-1.53-1.794-2.652-2.488l.663-.93A1.32 1.32 0 0 0 9.975.67a1.25 1.25 0 0 0-.433-.48a1.2 1.2 0 0 0-.63-.19zM6.16 2.741L5.132 1.287a.1.1 0 0 1 .001-.038h3.734a.1.1 0 0 1 0 .038L7.84 2.729a.625.625 0 0 0 .21.912c1.286.7 2.207 1.494 2.809 2.423c.599.924.911 2.026.911 3.394c0 1.149-.462 1.931-1.24 2.454c-.813.545-2.022.839-3.53.839s-2.717-.293-3.53-.837c-.779-.521-1.24-1.3-1.24-2.436c0-1.368.312-2.47.911-3.396c.603-.93 1.524-1.727 2.81-2.432a.625.625 0 0 0 .21-.91m1.464 2.134v.479a1.71 1.71 0 0 1 1.347 1.118a.625.625 0 0 1-1.178.417a.46.46 0 0 0-.433-.306h-.838a.342.342 0 0 0-.073.677l1.276.279a1.709 1.709 0 0 1-.101 3.358v.478a.625.625 0 1 1-1.25 0v-.479a1.71 1.71 0 0 1-1.347-1.118a.625.625 0 1 1 1.178-.417a.46.46 0 0 0 .433.306h.722a.459.459 0 0 0 .098-.907l-1.277-.28a1.592 1.592 0 0 1 .193-3.14v-.465a.625.625 0 1 1 1.25 0"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <p style="color: #0055ff;" class="fw-bold fs-5 text-center">Earn More</p>
+        <p class="fw-bold fs-1 text-center">Get access to more jobs and earn<br> more with each job</p>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-dark px-4 rounded-pill fw-bold me-lg-4 d-block">Start Free Trial</button>
+        </div>
+
+        <div class="container-lg container-fluid py-5 mx-auto">
+            <div class="d-flex justify-content-center my-5 shadow-md flex-column mx-auto flex-lg-row">
+                <div class="w-lg-50 w-100">
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/imgi_4_pro_pricing_chart.webp"
+                        alt="" class="w-100" style="border-radius:  20px 0 0 20px ;">
+                </div>
+                <div class="w-100 bg-white d-flex flex-column justify-content-center px-4 text-center text-lg-start"
+                    style="border-radius: 0 20px 20px 0;">
+                    <p class="fw-bold fs-5">Boost your projects</p>
+                    <p class="w-lg-75 w-100">Highlight your best work and make sure it reaches the right eyes at the
+                        right time.</p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center my-5 shadow-md flex-column mx-auto flex-lg-row">
+                <div class="w-lg-50 w-100">
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/imgi_5_pro_exclusive_freelance_jobs.webp"
+                        alt="" class="w-100" style="border-radius:  20px 0 0 20px ;">
+                </div>
+                <div class="w-100 bg-white  d-flex flex-column justify-content-center px-4 text-center text-lg-start"
+                    style="border-radius: 0 20px 20px 0;">
+                    <p class="fw-bold fs-4">See who's viewed your profile and projects</p>
+                    <p class="w-lg-75 w-100 fs-5">Get detailed insights on who's engaging with your work and how they
+                        found you, so you can follow up with potential clients and collaborators.</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-colmn justify-content-center my-5 shadow-md flex-column mx-auto flex-lg-row">
+                <div class="w-lg-50 w-100">
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/imgi_6_pro_zero_fees.webp"
+                        alt="" class="w-100" style="border-radius:  20px 0 0 20px;">
+                </div>
+                <div class="w-100 bg-white d-flex flex-column justify-content-center px-4 text-center text-lg-start"
+                    style="border-radius: 0 20px 20px 0;">
+                    <p class="fw-bold fs-4">Get noticed</p>
+                    <p class="w-lg-75 w-100 fs-5">Schedule your projects to publish at a set day/time to get maximum
+                        engagement with your audience.</p>
+                </div>
+            </div>
+
+            <div class="container d-flex align-items-center justify-content-between px-4 py-4 text-white flex-column mx-auto flex-lg-row mt-5"
+                style="background-image: linear-gradient(to right,rgb(0, 149, 79),#018901) !important; height: fit-content; width: 100%; border-radius: 30px;">
+                <!-- <div class="d-flex align-items-center gap-2"> -->
+                <p class="fw-bold" style="font-size: 4rem;">4X</p>
+                <div class="fw-bold border-2 bg-light d-none d-lg-block"
+                    style="opacity: 0.5; width: 3px; height: 100px;"></div>
+                <p class="w-50 fs-4">Pro members see their views and engagement increase by an average of<br><span
+                        class="fw-bold"> 45% in their first month</span></p>
+                <!-- </div> -->
+                <button class="btn btn-light w-25 rounded-pill" style="height: fit-content;">Start Free Trial</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FIFTH SECTION -->
+    <section class="py-5" style="background-color: #fefcfe;">
+        <div class="d-flex justify-content-center align-content-center" style="height: fit-content;">
+            <div class="bg-white shadow-sm my-3 p-2 "
+                style="width: fit-content; border-radius: 20px; border: solid 1px #b125c044 !important;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="" viewBox="0 0 12 12">
+                    <path fill="#b125c0"
+                        d="M1 5.51a1 1 0 0 1 .69-.953l1.786-.584a2.43 2.43 0 0 0 1.512-1.506L5.546.7A1 1 0 0 1 7.452.695l.576 1.796a2.4 2.4 0 0 0 1.497 1.502l1.776.56a1 1 0 0 1 .004 1.907l-1.778.569a2.39 2.39 0 0 0-1.5 1.502l-.567 1.774a1 1 0 0 1-1.9.014l-.6-1.776V8.54a2.44 2.44 0 0 0-1.507-1.514l-1.76-.566A1 1 0 0 1 1 5.51m2.77.568A3.43 3.43 0 0 1 5.907 8.22l.6 1.78l.57-1.78a3.4 3.4 0 0 1 2.138-2.142L11 5.508l-1.785-.564a3.39 3.39 0 0 1-2.137-2.141L6.5 1l-.563 1.78a3.43 3.43 0 0 1-2.144 2.142L2 5.508zM2 9v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1H3v.5a.5.5 0 0 1-1 0V10h-.5a.5.5 0 0 1 0-1z" />
+                </svg>
+            </div>
+        </div>
+        <p style="color: #b125c0;" class="fw-bold fs-5 text-center">Stand Out from the Crowd</p>
+        <p class="fw-bold fs-1 text-center">Personalize your profile to<br> showcase your unique brand</p>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-dark px-4 rounded-pill fw-bold me-lg-4 d-block">Start Free Trial</button>
+        </div>
+
+        <div class="container-lg container-fluid py-5 mx-auto">
+            <div class="d-flex justify-content-center my-5  flex-column mx-auto flex-lg-row">
+                <div class="w-lg-50 w-100 position-relative">
+                    <div>
+                        <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/black circle.svg" alt=""
+                            width="100" class="position-absolute translate-middle-y top-50 start-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                            class="bi bi-play-fill position-absolute top-50" viewBox="0 0 16 16">
+                            <path
+                                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"
+                                style="left: 500px" />
+                        </svg>
+                    </div>
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/imgi_7_pro_go_dark.webp" alt=""
+                        class="w-100" style="border-radius:  20px 0 0 20px ;">
+                </div>
+                <div class="w-100 bg-white d-flex flex-column shadow-lg justify-content-center px-4 text-center text-lg-start"
+                    style="border-radius: 0 20px 20px 0;">
+                    <p class="fw-bold fs-5">Boost your projects</p>
+                    <p class="w-lg-75 w-100">Highlight your best work and make sure it reaches the right eyes at the
+                        right time.</p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center my-5 flex-column mx-auto flex-lg-row">
+                <div class="w-lg-50 w-100">
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/imgi_8_pro_customize_profile.webp"
+                        alt="" class="w-100" style="border-radius:  20px 0 0 20px ;">
+                </div>
+                <div class="w-100 bg-white  d-flex flex-column shadow-lg justify-content-center px-4 text-center text-lg-start"
+                    style="border-radius: 0 20px 20px 0;">
+                    <p class="fw-bold fs-4">See who's viewed your profile and projects</p>
+                    <p class="w-lg-75 w-100 fs-5">Get detailed insights on who's engaging with your work and how they
+                        found you, so you can follow up with potential clients and collaborators.</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center my-5 flex-column mx-auto flex-lg-row">
+                <div class="w-lg-50 w-100">
+                    <img src="./Accelerate Your Creative Career _ Behance Pro __ Behance/imgi_9_pro_drive_engagement.webp"
+                        alt="" class="w-100" style="border-radius:  20px 0 0 20px;">
+                </div>
+                <div class="w-100 bg-white d-flex flex-column shadow-lg justify-content-center px-4 text-center text-lg-start"
+                    style="border-radius: 0 20px 20px 0 !important;">
+                    <p class="fw-bold fs-4">Get noticed</p>
+                    <p class="w-lg-75 w-100 fs-5">Schedule your projects to publish at a set day/time to get maximum
+                        engagement with your audience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SIXTH SECTION -->
+    <section class="py-5">
+        <div class="w-lg-50 w-100 px-5">
+            <p class="text-primary fw-bold">Success Stories</p>
+            <p class="fs-1 fw-bold">Creators like you are thriving with Behance Pro</p>
+            <p class="fs-4">Read more about how some of the world's best freelancers, art directors, and creatives use
+                Behance Pro to grow their creative careers on our <a>blog.</a></p>
+        </div>
+
+        <div class="d-flex ms-4 gap-5" style="overflow-x: auto; ">
+            <div class="card p-4 shadow-md fs-5" style="min-width: 400px; border-radius:20px;">
+                <div>
+                    <p>Behance Pro has been great. I have noticed I am getting <span class="fw-bold">more serious
+                            freelance inquiries</span> since signing up for Pro.</p>
+                    <p>For me the best feature is the no fees on payments: that is a really big deal. Most other
+                        marketplaces do a 50/50 split, but Behance pays out a lot so that was my main reason for going
+                        pro.</p>
+                    <div>
+                        <img src="" alt="">
+                        <p>Harbor Bickmore</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-4 shadow-md fs-5" style="min-width: 400px; border-radius:20px;">
+                <div>
+                    <p>I have had Behance for more than ten years. I have seen so many features and changes all these
+                        years, and Behance Pro is <span class="fw-bold">a new giant leap for the best creative
+                            platform</span></p>
+                    <div>
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-4 shadow-md fs-5" style="min-width: 400px; border-radius:20px;">
+                <div>
+                    <p>Behance has been <span>my main source of clients this year</span>. I love Behance Pro, especially
+                        the analytics feature — it’s great for tweaking my portfolio and hashtags.</p>
+                    <div>
+                        <img src="" alt="">
+                        <p>Kate Anto</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-4 shadow-md fs-5" style="min-width: 400px; border-radius:20px;">
+                <div>
+                    <p>I upgraded for 0% platform fees, and since then, selling assets on Behance has become one of
+                        <span>my main sources of income</span></p>
+                    <div>
+                        <img src="" alt="">
+                        <p>SilverStag Type Foundry</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-4 shadow-md fs-5" style="min-width: 400px; border-radius:20px;">
+                <div>
+                    <p>No platform fees on projects has saved us <span>hundreds of dollars on each project.</span></p>
+                    <div>
+                        <img src="" alt="">
+                        <p>Ulysses Design Co</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card p-4 shadow-md fs-5" style="min-width: 400px; border-radius:20px;">
+                <div>
+                    <p>I have found the Behance Pro account to be incredibly beneficial. One of my favorite features is
+                        the statistics tool, which has provided<span>invaluable insights</span> into my audience's
+                        preferences and current interests, which has guided my asset creation decisions. Additionally,
+                        the 0% Platform Fees offered by Behance Pro is immensely helpful, and I highly appreciate this
+                        aspect.</p>
+                    <div>
+                        <img src="" alt="">
+                        <p>Alexandra Pacheco</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-4 shadow-md fs-5" style="min-width: 400px; border-radius:20px;">
+                <div>
+                    <p>The features that made me upgrade without hesitation were the 0% Platform Fees and the Adobe
+                        Portfolio website, these features are really useful to me. I've also noticed that <span>my views
+                            and leads have increased</span></p>
+                    <div>
+                        <img src="" alt="">
+                        <p>Tiago Leitao</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-4 shadow-md fs-5" style="min-width: 400px; border-radius:20px;">
+                <div>
+                    <p>The most valuable aspect of Behance Pro for us is the advanced analytics feature. These metrics,
+                        like search terms, location, and traffic sources, help us identify <span>where to focus our
+                            design efforts</span> for maximum impact.</p>
+                    <div>
+                        <img src="" alt="">
+                        <p>Dirty barn</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-4 shadow-md fs-5" style="min-width: 400px; border-radius:20px;">
+                <div>
+                    <p> Since upgrading to Behance Pro, the increased visibility has allowed me to reach a broader
+                        audience and <span>attract more clients and collaborators</span>. The analytics feature helps me
+                        find which of my projects are resonating most with viewers, helping me tailor my portfolio to
+                        showcase my strongest work.</p>
+                    <div>
+                        <img src="" alt="">
+                        <p>María Barón</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-4 shadow-md fs-5" style="min-width: 400px; border-radius:20px;">
+                <div>
+                    <p>Behance Pro has been <span>incredibly helpful</span> for me, especially with the detailed
+                        statistics that allow me to track the performance of my work. The fact that there are no
+                        platform fees for both the client and myself is a significant advantage as well.</p>
+                    <div>
+                        <img src="" alt="">
+                        <p>Chloé Legoux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SEVENTH SECTION -->
+    <section class="mb-5 py-5 container-fluid">
+        <div class="text-center">
+            <p class="fs-1">Start your 7 day free trial today</p>
+            <p class="fs-5">Take your creative career to the next level by upgrading to Behance Pro.</p>
+        </div>
+
+        <div class="d-flex flex-column flex-lg-row justify-content-center gap-5">
+            <div class="card p-4" style="border-radius: 20px; max-width: 450px; border:2px solid #0055ff20;">
+                <p class="fs-3 fw-bold">Behance</p>
+                <p class="fs-5">Foundational tools to showcase your work and find creative opportunities.</p>
+                <p class="fs-3 fw-bold">Free</p>
+                <div>
+                    <p>Publish projects to showcase your work</p>
+                    <p>Discover and save inspiration</p>
+                    <p>Offer freelance services</p>
+                    <p>Send client proposals</p>
+                    <p>Sell assets</p>
+                    <p>Message others and connect with the community</p>
+                    <p>Access to our full-time job board</p>
+                    <p>Transact on Behance with 15-30% platform fees</p>
+                    <p>See basic stats on your projects</p>
+                </div>
+            </div>
+
+            <div class="card p-4 border-primary border-3 shadow-md" style="border-radius: 20px; max-width: 450px;">
+                <p class="fs-3 fw-bold">Behance <span
+                        style="background-image: linear-gradient(to right, rgb(133, 108, 255), blue); color: white; font-size: 16px; padding: 3px; border-radius: 10px;">PRO</span>
+                </p>
+                <p>High performance tools designed to help you stand out and earn more.</p>
+                <p class="fs-3 fw-bold"><sup>US$</sup>10.74/mo</p>
+                <div>
+                    <p> Publish projects to showcase your work</p>
+                    <p>Discover and save inspiration</p>
+                    <p>Offer freelance services</p>
+                    <p>Send client proposals</p>
+                    <p>Sell assets</p>
+                    <p>Message others and connect with the community</p>
+                    <p>Access to our full-time job board</p>
+                    <p>0% platform fees on all transactions</p>
+                    <p>Advanced analytics on your profile and projects</p>
+                    <p>See your top traffic sources and search terms</p>
+                    <p>Mark yourself as being available for work</p>
+                    <p>Exclusive recommended freelance jobs</p>
+                    <p>Promote your work to targeted audiences (Boost)</p>
+                    <p>Password protected projects and link-only projects</p>
+                    <p>Automatic project scheduling</p>
+                    <p>Search by image</p>
+                    <p>Profile personalization options including dark theme, customizable button, and sections</p>
+                    <p>Pricing guidance for freelance work</p>
+                    <p>Subscription to Adobe Portfolio (includes up to 5 websites)</p>
+                    <p>Pro badge</p>
+                    <p>Understand your followers' interests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <div class="mt-5"
+        style="background-image: linear-gradient(to right , blue, yellow,orange, red, pink, orange , red, aqua,lightblue) ; height: 5px;">
+    </div>
+    <div class="py-3 mb-0 bg-white shadow-lg d-flex align-items-center justify-content-center text-center">
+        <p class="mb-0"> <span class="fw-bold">Upgrade to Behance Pro today:</span> Get advanced analytics, a custom
+            portfolio website, and more features to grow your creative career. <span class="fw-bold text-primary">Start
+                your 7 day free trial</span></p>
+    </div>
+    <footer class="py-5" style="background-color: #191919;">
+        <div class="text-white d-flex flex-column flex-lg-row gap-4  justify-content-around my-5 footer px-5">
+            <div class="col-lg-3 col-12 text-center">
+                <h2 class="fs-1 fw-bold">BEHANCE</h2>
+            </div>
+
+            <div class=" d-flex justify-content-center">
+                <div class="d-flex flex-column flex-lg-row justify-content-between gap-5 text-center text-lg-start">
+                    <div>
+                        <h3 class=" fw-bold fs-5">Built For Creatives</h3>
+                        <div class="d-flex flex-column">
+                            <p>Try Behance Pro</p>
+                            <p>Find Inspiration</p>
+                            <p>Get Hired</p>
+                            <p>Sell Creative Assets</p>
+                            <p>Sell Freelance Services</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold fs-5">Find Talent</h3>
+                        <div>
+                            <p>Post a Job</p>
+                            <p>Graphic Designers</p>
+                            <p>Photographers</p>
+                            <p>Video Editors</p>
+                            <p>Web Designers</p>
+                            <p>Illustrators</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class=" fw-bold fs-5">Behance</h3>
+                        <div>
+                            <p>About Behance</p>
+                            <p>Adobe Portfolio</p>
+                            <p>Download the App</p>
+                            <p>Blog</p>
+                            <p>Careers</p>
+                            <p>Help Center</p>
+                            <p>Contact Us</p>
+                            <p>Login</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class=" fw-bold fs-5">Social</h3>
+                        <div>
+                            <p>Instagram</p>
+                            <p>Twitter</p>
+                            <p>Pinterest</p>
+                            <p>Facebook</p>
+                            <p>LinkedIn</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white mx-5" style="height: 1px;"></div>
+
+        <div class="d-flex flex-column flex-lg-row text-white justify-content-between align-items-center mx-5 "
+            style="font-size: 13px;">
+            <div>
+                <img src="" alt="">
+                <p>&copy; 2025 Adobe Inc. All rights reserved.</p>
+            </div>
+            <div class="d-flex gap-3 justify-content-center text-center" style="flex-wrap: wrap;">
+                <span>English</span>
+                <span>TOU</span>
+                <span>Privacy</span>
+                <span>Community</span>
+                <span>Cookie preferences</span>
+                <span class="">Do not sell or share my personal information</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
